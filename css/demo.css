@@ -24,6 +24,25 @@
     background: url(../img/swiper-next.png)no-repeat;
 
 }
+.video-box2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#forApple{
+    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
 .modile{
     display: none;
 }
@@ -67,6 +86,9 @@ a{
     left: 50%;
     top: -30px;
     transform: translateX(-50%);
+}
+#swiperVideo{
+	max-width: 1000px;
 }
 .hx{
     display:flex;
@@ -176,7 +198,7 @@ a{
 }
 .prevention{
     max-width: 1200px;
-    height:830px;
+    /* height:830px; */
     background:rgba(255,255,255,1);
     box-shadow:0px 4px 8px 1px rgba(29,32,136,0.1);
     border-radius:20px;
@@ -194,6 +216,7 @@ a{
 .report_imgBox{
     width: 495px;
     height: 257px;
+	overflow: hidden;
 }
 .report_content{
     margin-left: 46px;
@@ -203,14 +226,15 @@ a{
     display: inline-block;
     width: 495px;
     height: 257px;
+	overflow: hidden;
 }
 .report_imgBox img{
     width:100% ;
     height: 100%;
 }
 .report_h3{
-    font-size:30px;
-    font-weight:bold;
+    font-size:28px;
+    /* font-weight:bold; */
     color:rgba(67,67,67,1);
 }
 .report_p{
@@ -241,13 +265,14 @@ a{
     border-radius:5px;
     margin: 50px auto 0;
     position: relative;
+	overflow: hidden;
 }
 .video_img:hover{
     cursor: pointer;
 }
 .video_img .v_img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .appy{
     position: absolute;
@@ -256,13 +281,13 @@ a{
     transform: translate(-50%,-50%);
 }
 .video_title{
-    width:328px;
+    width:310px;
     margin:0 auto;
     font-size:20px;
-    font-weight:bold;
+    /* font-weight:bold; */
     color:rgba(67,67,67,1);
     display:block;
-    line-height: 30px;
+    line-height:1.2;
     margin-top:10px;
 }
 .video-box {
@@ -415,6 +440,7 @@ a{
     .report_imgBox.report_imgBox a{
         width: 274px;
         height: 126px;
+		overflow: hidden;
     }
     .pc{
         display:none;
@@ -466,4 +492,17 @@ a{
     .video{
         height: 360px !important;
     }
+    .video-box .close {
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: initial;
+        right: initial;
+    }
+    #forApple,#html5VideoBack,#html5Player{
+        width: 95% !important;
+        height: 200px !important;
+        margin:0 auto;
+    }
+
 }
